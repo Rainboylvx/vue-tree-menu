@@ -1,29 +1,21 @@
 # vue-tree-menu
 
-## Project setup
+## 使用
+
+需要在`index.html`引用`font-awesome`
+
 ```
-yarn install
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 ```
 
-### Compiles and hot-reloads for development
+
+引入
+
 ```
-yarn run serve
+<script src="https://unpkg.com/vue"></script>
+<script src="dist/tree-menu.js"></script>
 ```
 
-### Compiles and minifies for production
 ```
-yarn run build
+<tree-menu treedata="jsonStringify_str"></tree-menu>
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
