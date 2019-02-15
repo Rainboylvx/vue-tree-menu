@@ -17,5 +17,5 @@
 ```
 
 ```
-<tree-menu treedata="jsonStringify_str"></tree-menu>
+<tree-menu treedata='{"name":"Group","children":[{"name":"Sub Group","children":[{"name":"Item"},{"name":"Item"}]},{"name":"Item"}]}'></tree-menu>
 ```
