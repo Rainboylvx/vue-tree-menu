@@ -1,18 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      hello
+      <tree-menu-wraper :treedata="JSON.stringify(treeData)"></tree-menu-wraper>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
+var treeData = {
+  name: "Group",
+  children: [
+    {
+      name: "Sub Group",
+      children: [{ name: "Item" }, { name: "Item" }]
+    },
+    { name: "Item" }
+  ]
+};
+import treeMenuWraper from './treeMenuWraper.vue'
 export default {
   name: 'app',
-  components: {
-    HelloWorld,
-  },
+    data(){
+        return {
+            treeData
+        }
+    },
+  components: {treeMenuWraper},
 };
 </script>
 
