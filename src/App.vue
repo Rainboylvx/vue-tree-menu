@@ -13,7 +13,7 @@ var treeData = {
       name: "Sub Group",
       children: [{ name: "Item" }, { name: "Item" }]
     },
-    { name: "Item" }
+    { name: "Item" ,password:true}
   ]
 };
 import treeMenuWraper from './treeMenuWraper.vue'

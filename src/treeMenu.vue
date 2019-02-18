@@ -1,5 +1,5 @@
 <template>
-<li :class="[isFolder ? 'folder' : 'file']">
+<li :class="[model.password ?'password':'nopassword',isFolder ? 'folder' : 'file']">
     <label
       :class="{'open': open}"
       @click="toggle"
@@ -9,9 +9,7 @@
           <div>
           <span class="input" v-if="dep===0">
               <input v-model="idata" type="text"  :disabled="idis" @keyup.enter="dealInput" ref="gain">
-              <button @click="inputClick">
-                  <i :class="{fa:true,'fa-search':idis, 'fa-search-minus':!idis}" aria-hidden="true"></i> 
-              </button>
+              <button @click="inputClick">S̶</button>
           </span>
           <span>
           </span>
@@ -68,12 +66,15 @@ export default {
             if (this.isFolder) {
                 this.open = !this.open;
             }
+            else{
+                window.location.href = this.model.url
+            }
         },
         search(key){
             for( let c of this.$children){
                 c.search(key)
             }
-            if(key == this.model.name){
+            if(this.model.name.indexOf(key)!==-1){
                 this.$emit('childopen')
             }
         },

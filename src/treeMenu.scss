@@ -80,19 +80,36 @@
         float: right;
         color: #828282;
     }
+    .cd-accordion-menu li.password > label::before {
+        content: "\f023";
+    }
 
-    .cd-accordion-menu li.file > label::before {
+    .cd-accordion-menu li.nopassword > label::before {
         content: "\f15b";  
     }
     .cd-accordion-menu li.folder > label::before {
         content: "\f054";
     }
 
-    .cd-accordion-menu li.file > label::before {
-        content: "\f15b";  
+
+
+    .cd-accordion-menu li.file:hover > label {
+        background:#333;
     }
+
+
     .cd-accordion-menu li.add > label::before {
         content: "\f067";
+    }
+
+    .searchoff::before {
+        //content: "\f010";
+        content: "\f054";  
+    }
+
+    .searchon::before {
+        //content: "\f00e";
+        content: "\f054";  
     }
 
 
