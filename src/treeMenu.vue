@@ -9,7 +9,7 @@
           <div>
           <span class="input" v-if="dep===0">
               <input v-model="idata" type="text"  :disabled="idis" @keyup.enter="dealInput" ref="gain">
-              <button @click="inputClick">S̶</button>
+              <button @click="inputClick">S</button>
           </span>
           <span>
           </span>
@@ -67,7 +67,8 @@ export default {
                 this.open = !this.open;
             }
             else{
-                window.location.href = this.model.url
+                //window.location.href = this.model.url
+                window.open(this.model.url,"_blank")
             }
         },
         search(key){
