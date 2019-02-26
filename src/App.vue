@@ -11,7 +11,22 @@ var treeData = {
   children: [
     {
       name: "Sub Group",
-      children: [{ name: "Item" }, { name: "Item" }]
+      children: [{ name: "Group",
+          children: [
+              {
+                  name:'G4',
+                  children:[{
+                      name:'G5',
+                      children:[
+                          {
+                              name:'item'
+                          }
+                      ]
+                  }]
+
+              }
+          ]
+      }, { name: "Item" }]
     },
     { name: "Item" ,password:true}
   ]

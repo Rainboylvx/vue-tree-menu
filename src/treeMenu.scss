@@ -159,10 +159,36 @@
     .cd-accordion-menu ul ul a::after {
         left: 77px;
     }
-    .cd-accordion-menu ul ul ul label,
-    .cd-accordion-menu ul ul ul a {
-        padding-left: 118px;
+
+
+    .cd-accordion-menu ul ul ul  {
+        a,label {
+            padding-left: 118px;
+            &::before {
+                left:77px;
+            }
+        }
+        ul {
+            a,label {
+                padding-left: 118px+18;
+                &::before {
+                    left:77px+22;
+                }
+            }
+            ul{
+                a,label {
+                    padding-left: 118px+18+18;
+                    &::before {
+                        left:77px+22+22;
+                    }
+                }
+            }
+        }
+        
     }
+
+
+
     .cd-accordion-menu ul ul ul label::before {
         left: 72px;
     }
