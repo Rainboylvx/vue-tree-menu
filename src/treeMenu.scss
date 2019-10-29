@@ -81,14 +81,14 @@
         color: #828282;
     }
     .cd-accordion-menu li.password > label::before {
-        content: "\f023";
+        content: "🔒";
     }
 
     .cd-accordion-menu li.nopassword > label::before {
-        content: "\f15b";  
+        content: "☰";  
     }
     .cd-accordion-menu li.folder > label::before {
-        content: "\f054";
+        content: "▶";
     }
 
 
@@ -195,5 +195,17 @@
     .cd-accordion-menu ul ul ul label::after,
     .cd-accordion-menu ul ul ul a::after {
         left: 95px;
+    }
+    p {
+        margin:0;
+        padding: 0;
+        display: inline-block;
+        height: 25px;
+        line-height:25px;
+        img {
+            vertical-align: middle;
+            height: 20px;
+            display: inline-block;
+        }
     }
 }

@@ -4,7 +4,8 @@
       :class="{'open': open}"
       @click="toggle"
     >
-      {{ model.name }}
+    <!--{{ model.name }}-->
+    <p class="menu-p" v-html="model.name"></p>
       <div class="spaninfo">
           <div>
           <span class="input" v-if="dep===0">

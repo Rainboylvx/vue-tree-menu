@@ -14,7 +14,7 @@ var treeData = {
       children: [{ name: "Group",
           children: [
               {
-                  name:'G4',
+                  name:'<img class="joypixels" alt="😄" title=":smile:" src="https://cdn.jsdelivr.net/joypixels/assets/5.0/png/unicode/32/1f604.png"/> 1.9编程基础之顺序查找',
                   children:[{
                       name:'G5',
                       children:[
